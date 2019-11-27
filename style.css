@@ -109,6 +109,7 @@ section {
   margin: 0;
   font-size: 1rem;
   color: #858181;
+  text-align: justify;
 }
 /*=======*/
 .meet-our-team {
@@ -128,6 +129,7 @@ section {
   font-size: 1.25rem;
   font-weight: 300;
   color: #858181;
+  text-align: justify;
 }
 .meet-our-team__item-container {
   margin-top: 1rem;
@@ -172,10 +174,15 @@ section {
 }
 @media (max-width: 767px) {
   .about-hero-banner h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
+
   .about-us-container {
     margin-top: 1rem;
+  }
+  .about-us__content {
+    padding: 3rem 1rem;
+    text-align: center;
   }
   .about-us-container > .container > .row:nth-child(2) > .about-us__img {
     order: 0;
