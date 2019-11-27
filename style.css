@@ -171,6 +171,9 @@ section {
   opacity: 1;
 }
 @media (max-width: 767px) {
+  html {
+    font-size: 65%;
+  }
   .about-us-container > .container > .row:nth-child(2) > .about-us__img {
     order: 0;
   }
