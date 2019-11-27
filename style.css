@@ -171,8 +171,11 @@ section {
   opacity: 1;
 }
 @media (max-width: 767px) {
-  html {
-    font-size: 65%;
+  .about-hero-banner h1 {
+    font-size: 2rem;
+  }
+  .about-us-container {
+    margin-top: 1rem;
   }
   .about-us-container > .container > .row:nth-child(2) > .about-us__img {
     order: 0;
