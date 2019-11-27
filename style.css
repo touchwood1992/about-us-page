@@ -54,7 +54,7 @@ section {
   background-position: center;
   position: relative;
 }
-.about-hero-banner h1 {
+.about-hero-banner .container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,6 +64,9 @@ section {
   text-transform: uppercase;
   color: #e7e7e7;
   letter-spacing: 0.2rem;
+}
+.about-hero-banner .h1 {
+  text-align: center;
 }
 .about-hero-banner h1::after {
   content: "";
