@@ -65,7 +65,7 @@ section {
   color: #e7e7e7;
   letter-spacing: 0.2rem;
 }
-.about-hero-banner .h1 {
+.about-hero-banner h1 {
   text-align: center;
 }
 .about-hero-banner h1::after {
