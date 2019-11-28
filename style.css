@@ -382,9 +382,10 @@ ul.owl-carousel {
   .owl-theme .owl-nav {
     z-index: 1;
   }
-  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-prev {
+    left: -1rem;
+  }
   .owl-carousel .owl-nav button.owl-next {
-    left: 0;
-    right: 0;
+    right: 1rem;
   }
 }
