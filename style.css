@@ -389,3 +389,10 @@ ul.owl-carousel {
     right: -1rem;
   }
 }
+
+@media (hover: none) {
+  .about-hero-banner,
+  .testimonial-container {
+    background-attachment: initial;
+  }
+}
