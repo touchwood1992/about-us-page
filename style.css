@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   background-color: #fff;
-  color: black;
+  color: #333;
   text-align: left;
 }
 section {
@@ -47,12 +47,38 @@ section {
 .site-btn--about:active {
   transform: translateY(0.5px);
 }
-/*=======*/
+.semi-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.semi-heading::before {
+  content: "";
+  margin-right: 1rem;
+  height: 1px;
+  background-color: #e6e3e3;
+  flex: 1;
+}
+.semi-heading::after {
+  content: "";
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #e6e3e3;
+  flex: 1;
+}
+/*=====================================================================*/
 .about-hero-banner {
   background-size: cover;
   min-height: 50vh;
   background-position: center;
   position: relative;
+  background-attachment: fixed;
 }
 .about-hero-banner .container {
   position: absolute;
@@ -77,7 +103,7 @@ section {
   background-color: #e7e7e7;
   margin-top: 0.3rem;
 }
-/*=======*/
+/*=====================================================================*/
 .about-us-container > .container > .row:nth-child(2) > .about-us__img {
   order: 1;
 }
@@ -89,11 +115,15 @@ section {
   padding: 6rem 4rem;
   text-align: center;
 }
-/*=======*/
+.about-title {
+  text-transform: uppercase;
+}
+/*=====================================================================*/
 .about-us-features {
-  padding: 8rem 0;
+  padding: 3rem 0 5rem;
   background-color: #f8f9fa;
 }
+
 .feature-container h3 {
   text-transform: capitalize;
 }
@@ -114,20 +144,15 @@ section {
   color: #858181;
   text-align: justify;
 }
-/*=======*/
+/*=====================================================================*/
 .meet-our-team {
-  padding: 6rem 0;
+  padding: 3rem 0 5rem;
 }
-.meet-our-team__container > h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin: 0;
-}
+
 .meet-our-team__container > p {
   text-align: center;
   width: 70%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin: 0 auto;
   font-size: 1.15rem;
   font-weight: 300;
@@ -160,11 +185,119 @@ section {
   text-transform: uppercase;
 }
 
-/*=======*/
+/*=====================================================================*/
 .about-us-bootom-banner {
   background-color: var(--icon-color);
   padding: 3rem 0;
   color: #fff;
+}
+/*=====================================================================*/
+.testimonial-container {
+  padding: 3rem 0;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("images/testimonial.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+}
+.testimonial-container .semi-heading {
+  color: #ffffffb0;
+  padding-bottom: 5rem;
+}
+.client-carousel .item {
+  color: #fff;
+  text-align: center;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.testimonial-container .item {
+  margin: 0;
+  position: relative;
+  padding-top: 2rem;
+}
+.testimonial-container .item::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.5rem;
+  left: -3px;
+  font-size: 5rem;
+  z-index: 1;
+  line-height: 1;
+}
+blockquote :first-child {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+blockquote :first-child::after {
+  content: "\201D";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  font-size: 5rem;
+  z-index: 1;
+  line-height: 1;
+}
+ul.owl-carousel {
+  margin: 0;
+  position: relative;
+}
+.owl-carousel .owl-item .quote-item img {
+  max-width: 50px;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 50%;
+}
+.quote-item {
+  margin-top: 4rem;
+}
+.owl-carousel .owl-item p {
+  margin: 0;
+}
+.quote-item-designation {
+  font-size: 0.8rem;
+}
+.quote-item p.quote-item-title {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.owl-theme .owl-nav {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  color: #fff;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel button.owl-dot:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  float: left;
+  position: relative;
+  left: -3rem;
+  transform: translateY(-55%);
+}
+.owl-carousel .owl-nav button.owl-next {
+  float: right;
+  position: relative;
+  right: -3rem;
+  transform: translateY(-55%);
+}
+.owl-carousel .owl-nav button:focus {
+  outline: none;
 }
 /*=======================================*/
 /* ANIMATIONS */
@@ -175,6 +308,7 @@ section {
 .animated {
   opacity: 1;
 }
+/*=====================================================================*/
 @media (max-width: 767px) {
   .about-hero-banner h1 {
     font-size: 2.5rem;

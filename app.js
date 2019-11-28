@@ -108,3 +108,28 @@ $("#js-fourth-content").waypoint({
 //   },
 //   offset: "75%"
 // });
+
+/**========================================================================================================== */
+// Carasoul Starts
+
+$(".client-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  },
+  navText: [
+    '<i class="im im-angle-left"></i>',
+    '<i class="im im-angle-right"></i>'
+  ]
+});
