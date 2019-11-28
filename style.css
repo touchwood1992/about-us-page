@@ -373,4 +373,18 @@ ul.owl-carousel {
   .about-us__img {
     min-height: 40vh;
   }
+  .contact-btn-container {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .owl-theme .owl-nav {
+    z-index: 1;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    left: 0;
+    right: 0;
+  }
 }
