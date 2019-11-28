@@ -386,6 +386,6 @@ ul.owl-carousel {
     left: -1rem;
   }
   .owl-carousel .owl-nav button.owl-next {
-    right: 1rem;
+    right: -1rem;
   }
 }
